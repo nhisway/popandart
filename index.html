@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header, .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .search-bar {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .zoning {
+            background-color: #ccc;
+            text-align: center;
+            padding: 50px 0;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .best-sellers, .licenses, .products, .about-us {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .item {
+            width: 18%;
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+        .highlight {
+            background-color: #fff;
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+        .highlight .zoning {
+            height: 200px;
+        }
+        .help-section, .testimonial-section {
+            text-align: center;
+        }
+        .newsletter {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form input[type="text"], form input[type="email"], form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+        .centered-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>HEADER</h1>
+    </div>
+    <div class="container">
+        <!-- Section de recherche -->
+        <div class="section">
+            <input type="text" class="search-bar" placeholder="Recherche...">
+        </div>
+        <!-- Section d'image de couverture -->
+        <div class="section">
+            <div class="highlight">
+                <div class="zoning">Image de couverture</div>
+            </div>
+        </div>
+        <!-- Section de la collection -->
+        <div class="section">
+            <div class="highlight">
+                <h2>Collection</h2>
+                <p>Découvrez notre sélection d'objets artisanaux uniques et audacieuses.</p>
+                <button>Nos Produits</button>
+            </div>
+        </div>
+        <!-- Section des meilleures ventes -->
+        <div class="section">
+            <h2>Nos meilleures ventes</h2>
+            <div class="best-sellers">
+                <div class="item">
+                    <div class="zoning">Image produit 1</div>
+                    <p>Produit 1</p>
+                    <p>358 €</p>
+                    <button>Ajouter</button>
+                </div>
+                <div class="item">
+                    <div class="zoning">Image produit 2</div>
+                    <p>Produit 2</p>
+                    <p>469 €</p>
+                    <button>Ajouter</button>
+                </div>
+                <div class="item">
+                    <div class="zoning">Image produit 3</div>
+                    <p>Produit 3</p>
+                    <p>378 €</p>
+                    <button>Ajouter</button>
+                </div>
+                <div class="item">
+                    <div class="zoning">Image produit 4</div>
+                    <p>Produit 4</p>
+                    <p>359 €</p>
+                    <button>Ajouter</button>
+                </div>
+            </div>
+        </div>
+        <!-- Section à propos de nous -->
+        <div class="section">
+            <div class="highlight">
+                <h2>À propos de nous</h2>
+                <div class="about-us">
+                    <div class="item">
+                        <div class="zoning">Logo Pop&Art</div>
+                    </div>
+                    <div class="item">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section des licences -->
+        <div class="section">
+            <h2>Nos licences</h2>
+            <div class="licenses">
+                <div class="item">
+                    <div class="zoning">Image Ghibli</div>
+                    <p>Licence Ghibli</p>
+                </div>
+                <div class="item">
+                    <div class="zoning">Image Pixar</div>
+                    <p>Licence Pixar</p>
+                </div>
+                <div class="item">
+                    <div class="zoning">Image Zelda</div>
+                    <p>Licence Zelda</p>
+                </div>
+            </div>
+        </div>
+        <!-- Section des produits -->
+        <div class="section">
+            <h2>Nos Produits</h2>
+            <div class="centered-text">
+                <p>Des pièces uniques qui captivent et inspirent</p>
+            </div>
+            <div class="products">
+                <div class="item">
+                    <div class="zoning">Image produit 1</div>
+                </div>
+                <div class="item">
+                    <div class="zoning">Image produit 2</div>
+                </div>
+                <div class="item">
+                    <div class="zoning">Image produit 3</div>
+                </div>
+                <div class="item">
+                    <div class="zoning">Image produit 4</div>
+                </div>
+            </div>
+        </div>
+        <!-- Section de contact -->
+        <div class="section help-section">
+            <h2>Comment pouvons-nous vous aider ?</h2>
+            <form action="mailto:virginiexg.web@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <input type="text" name="telephone" placeholder="Portable">
+                <textarea name="message" placeholder="Votre message" rows="4" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+        <!-- Section des témoignages -->
+        <div class="section testimonial-section">
+            <h2>Ce qu'ils pensent de nous</h2>
+            <div class="highlight">
+                <div class="zoning">Avis vérifié</div>
+                <p>Super figurine !</p>
+            </div>
+            <div class="highlight">
+                <div class="zoning">Avis vérifié</div>
+                <p>Super figurine !</p>
+            </div>
+            <div class="highlight">
+                <div class="zoning">Avis vérifié</div>
+                <p>Super figurine !</p>
+            </div>
+        </div>
+        <!-- Section d'inscription à la newsletter -->
+        <div class="section">
+            <input type="email" class="newsletter" placeholder="Inscription à la Newsletter">
+            <button type="submit">S'inscrire</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Mentions légales | CGV | Contact</p>
+    </div>
+</body>
+</html>
